@@ -1,5 +1,5 @@
 FROM node:12-slim
-WORKDIR /usr/src/app
+WORKDIR /usr/maryeleanorperry/src/app
 COPY package*.json ./
 RUN npm install -g @angular/cli
 RUN npm install
