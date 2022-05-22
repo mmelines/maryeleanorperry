@@ -1,0 +1,44 @@
+<div class="tech-list resume-list">
+    <div>
+        <div>
+            <div class="tech-category">
+                <div class="tech-subheading">
+                    <span class="tech-subheading-main">INTERMEDIATE</span>
+                    <span class="tech-subheading-flourish"> Ability</span>
+                </div>
+                <div class="tech-content">
+                    <span *ngFor="let intermediate_item of intermediate_tech_items" class="tech-item">
+                        {{intermediate_item.name}}, 
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="tech-category">
+                <div class="tech-subheading">
+                    <span class="tech-subheading-main">HOBBYIST</span>
+                    <span class="tech-subheading-flourish"> Ability</span>
+                </div>
+                <div class="tech-content">
+                    <span *ngFor="let hobbyist_item of hobbyist_tech_items" class="tech-item">
+                        {{hobbyist_item.name}}, 
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="tech-category">
+                <div class="tech-subheading">
+                    <span class="tech-subheading-flourish">Current </span>
+                    <span class="tech-subheading-main">INTERESTS</span>
+                    <span class="tech-subheading-flourish"> and coursework/reading in</span>
+                </div>
+                <div class="tech-content">
+                    <span *ngFor="let interest_item of interest_tech_items" class="tech-item">
+                        {{interest_item.name}}, 
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

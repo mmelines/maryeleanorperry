@@ -1,0 +1,16 @@
+<div class="experience-list resume-list">
+    <div *ngFor="let exp of experience" class="exp-item">
+        <div>
+            <span class="exp-role">{{exp.role}}</span>,
+            <span class="exp-compnay">{{exp.company}}</span>
+        </div>
+        <div class="datespan">
+            <span>{{exp.start_est}}</span>
+            <span *ngIf="exp.end_est"> - </span>
+            <span>{{exp.end_est}}</span>
+        </div>
+        <div *ngFor="let resp of exp.responsibilities">
+            - <span>{{resp}}</span><br>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="skills-list resume-list">
+    <div *ngFor="let skill of skills" class="skill-item">
+        {{skill.prepend_text}}
+        <span class="skill-name">{{skill.name}}</span>
+        {{skill.postpend_text}}
+    </div>
+</div>

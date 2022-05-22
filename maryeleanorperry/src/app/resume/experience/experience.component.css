@@ -1,0 +1,20 @@
+.exp-item {
+    margin: 0 0 3% 0;
+}
+
+.exp-role {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.exp-company {
+    font-weight: 300;
+    font-size: 1.05em;
+}
+
+.datespan {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: .9em;
+    margin-top: -.5%;
+}

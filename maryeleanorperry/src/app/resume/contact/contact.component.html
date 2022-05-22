@@ -1,0 +1,14 @@
+<div id="contacts-list-container">
+    <div id="contact-header">CONTACT</div>
+    <div id="contacts-list" class="resume-list">
+        <div *ngFor="let contact of contacts" class="contact-item">
+            <div class="left-contact contact-col">{{contact.name}} -</div>
+            <div class="right-contact contact-col">
+                <span *ngIf="contact.url else noLink"><a href="contact.url">{{contact.username}}</a></span>
+                <ng-template #noLink>
+                    <span>{{contact.username}}</span>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>

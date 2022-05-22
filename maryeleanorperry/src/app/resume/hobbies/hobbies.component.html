@@ -1,0 +1,9 @@
+<div class="hobbies-list resume-hobbies">
+    <div *ngFor="let hobby of hobbies" class="hobby-item">
+        <span *ngFor="let det of hobby.list">
+            <span>{{det.prepend}}</span>
+            <span class="hobby-text">{{det.text}}</span>
+            <span class="hobby-postpend">{{det.postpend}}</span>
+        </span>
+    </div>
+</div>

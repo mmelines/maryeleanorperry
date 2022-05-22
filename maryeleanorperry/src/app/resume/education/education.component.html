@@ -1,0 +1,13 @@
+<div class="education-list resume-list">
+    <div *ngFor="let eitem of education" class="education-item">
+        <div>
+            <span class="provider-name">{{eitem.provider}}</span>,
+            <span class="provider-detail">{{eitem.short_description}}</span>
+        </div>
+        <div class="datespan">
+            {{eitem.start_month}} {{eitem.start_year}}
+            <span *ngIf="eitem.end_year"> - </span>
+            {{eitem.end_month}} {{eitem.end_year}}
+        </div>
+    </div>
+</div>

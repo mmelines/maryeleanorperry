@@ -1,0 +1,18 @@
+
+    #hamburger-box {
+        display: block;
+        width: 4em;
+        height: 4em;
+        border: 2px solid white;
+        padding-top: .5em;
+    }
+
+    .hamburger-row {
+        display: block;
+        height: .2em;
+        width: 75%;
+        margin: .5em auto;
+        border: 2px solid black;
+        background-color: black;
+        box-shadow: 1px solid black;
+    }

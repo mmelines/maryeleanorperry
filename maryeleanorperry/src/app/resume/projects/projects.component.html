@@ -1,0 +1,15 @@
+<div class="projects-list resume-list">
+    <div *ngFor="let project of projects" class="project-item">
+        <div>
+            <span class="subheading-right">{{project.name}}</span> <span *ngIf="project.role">, {{project.role}}</span>
+        </div>
+        <div *ngIf="project.start_est" class="datespan">
+            {{project.start_est}} 
+            <span *ngIf="project.end_est">- {{project.end_est}}</span>
+            <span *ngIf="project['status']=='ongoing'"></span>
+        </div>
+        <div *ngIf="project.description">
+            {{project.description}}
+        </div>
+    </div>
+</div>    

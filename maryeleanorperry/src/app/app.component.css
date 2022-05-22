@@ -1,0 +1,91 @@
+body {
+    font-family: 'Merriweather';
+    width: 100%;
+    margin: 0;
+}
+
+.thin_text {
+    font-weight: 200;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 4em;
+}
+
+h1 {
+    display: block;
+    font-family: 'Merriweather', serif;
+}
+
+@media screen and (max-width:650px) {
+    h1 {
+        position: relative;
+        margin: 0;
+    }
+    .lg_screen {
+        display: none;
+    }
+    .sm_screen {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #hamburger-nav{
+        display: block;
+        width: 5em;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width:651px) {
+    h1 {
+        padding: none;
+        border: 0 0 -13em 0;
+    }
+    .lg_screen {
+        display: block;
+        margin: 0px;
+    }
+    .sm_screen {
+        display: none;
+    }
+    nav {
+        display: flex;
+        height: 3em;
+        flex-direction: row;
+        margin: -.5em none 2% 15%;
+    }
+    nav a {
+        font-family: 'Merriweather', serif;
+        display: block;
+        height: 1.7em;
+        width: 5em;
+        margin-right: 2%;
+        text-align: center;
+        padding: .4em .1em none auto;
+        border: 2px solid white;
+    }
+    #hamburger-nav {
+        display: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 a:hover {
+    color: orange;
+}
+
+nav a:hover {
+    background-color: lightgoldenrodyellow;
+    color: orange;
+    border: 2px solid orange;
+}
