@@ -16,7 +16,7 @@ import { AppComponent } from './app.component';
     AppComponent, ResumeComponent, NavigationComponent, NavigationRoutesComponent
   ],
   imports: [
-    BrowserModule, ResumeModule, AppRoutingModule
+    BrowserModule.withServerTransition({ appId: 'serverApp' }), ResumeModule, AppRoutingModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
